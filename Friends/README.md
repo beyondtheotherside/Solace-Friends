@@ -1,6 +1,6 @@
 # Friends Plugin
 
-A Minecraft Paper plugin for version 1.21.1 that allows players to add friends and receive notifications when their friends come online.
+A Minecraft Paper plugin for version 1.21.11 for The Solace Project.
 
 ## Features
 
@@ -20,7 +20,7 @@ A Minecraft Paper plugin for version 1.21.1 that allows players to add friends a
 
 ## Building
 
-1. Make sure you have Maven installed
+1. Uses Maven
 2. Run `mvn clean package` in the project directory
 3. The compiled JAR will be in the `target/` directory
 
@@ -44,12 +44,14 @@ The `config.yml` file contains the following options:
 
 ## Data Storage
 
-Friend data is stored in `plugins/Friends/friends.yml`. The file is automatically saved when:
+Friend data is stored in `plugins/Friends/friends.yml`. The file is automatically saved:
 - A friend is added or removed
-- The server shuts down
+- When the server shuts down
 - At the configured auto-save interval
 
 ## Requirements
 
-- Paper/Spigot 1.21.1 or higher
+- Paper/Spigot 1.21.11 or higher
 - Java 21 or higher
+
+Plugin by otherside. All Rights Reserved.
