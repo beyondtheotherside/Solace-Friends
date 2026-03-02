@@ -1,0 +1,83 @@
+# Friends Plugin Configuration
+# All messages support Minecraft color codes: &0-&9, &a-&f, &k-&r
+# Placeholders in messages: {player} = player name, {count} = number
+
+# Notification settings
+notifications:
+  # Send a chat message in addition to action bar when a friend comes online
+  chat-message: false
+  
+  # Duration (in ticks) to show the action bar message (20 ticks = 1 second)
+  action-bar-duration: 60
+
+# Messages
+messages:
+  # Command-related messages
+  no-permission: "&cYou do not have permission to use this command!"
+  players-only: "&cThis command can only be used by players!"
+  usage-header: "&6=== Friend Commands ==="
+  usage-add: "&e/friend add <player> &7- Send a friend request"
+  usage-accept: "&e/friend accept <player> &7- Accept a friend request"
+  usage-deny: "&e/friend deny <player> &7- Deny a friend request"
+  usage-requests: "&e/friend requests &7- View pending requests"
+  usage-remove: "&e/friend remove <player> &7- Remove a friend"
+  usage-list: "&e/friend list &7- List all your friends"
+  
+  # Add friend messages
+  add-usage: "&cUsage: /friend add <player>"
+  add-self: "&cYou cannot add yourself as a friend!"
+  add-player-not-found: "&cPlayer '{player}' not found!"
+  add-already-friends: "&e{player} is already your friend!"
+  request-sent: "&aFriend request sent to {player}!"
+  request-received: "&e{player} sent you a friend request. Use /friend accept {player}!"
+  request-already-sent: "&eYou already sent a request to {player}!"
+  request-already-received: "&e{player} has already sent you a request. Use /friend accept {player}!"
+
+  # Accept friend request messages
+  accept-usage: "&cUsage: /friend accept <player>"
+  accept-player-not-found: "&cPlayer '{player}' not found!"
+  accept-no-request: "&cYou have no pending request from {player}!"
+  accept-success: "&aYou are now friends with {player}!"
+  accept-notify: "&a{player} accepted your friend request!"
+
+  # Deny friend request messages
+  deny-usage: "&cUsage: /friend deny <player>"
+  deny-player-not-found: "&cPlayer '{player}' not found!"
+  deny-no-request: "&cYou have no pending request from {player}!"
+  deny-success: "&eYou denied {player}'s friend request."
+  deny-notify: "&e{player} denied your friend request."
+
+  # Pending requests list
+  requests-header: "&6=== Pending Friend Requests ==="
+  requests-none: "&eYou have no pending friend requests!"
+  requests-list: "&e{players}"
+  
+  # Remove friend messages
+  remove-usage: "&cUsage: /friend remove <player>"
+  remove-player-not-found: "&cPlayer '{player}' not found!"
+  remove-not-friends: "&c{player} is not your friend!"
+  remove-success: "&aRemoved {player} from your friends list!"
+  
+  # List friends messages
+  list-header: "&6=== Your Friends ==="
+  list-no-friends: "&eYou have no friends!"
+  list-online-prefix: "&aOnline ({count}): &f"
+  list-offline-prefix: "&7Offline ({count}): &f"
+  
+  # Notification messages
+  # Message shown in action bar when a friend comes online
+  # Use {player} as placeholder for the friend's name
+  friend-online: "&a{player} is now online!"
+  
+  # Message shown to player when they join and have friends online
+  # Use {count} as placeholder for the number of online friends
+  friends-online: "&aYou have {count} friend(s) online!"
+  pending-requests: "&eYou have {count} pending friend request(s). Use /friend requests."
+
+# Data storage
+storage:
+  # File name for storing friend data (relative to plugin data folder)
+  data-file: "friends.yml"
+  
+  # Auto-save interval in seconds (0 to disable auto-save)
+  auto-save-interval: 300

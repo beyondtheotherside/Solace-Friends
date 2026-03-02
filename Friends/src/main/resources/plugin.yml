@@ -1,0 +1,12 @@
+name: SolaceFriends
+version: '${project.version}'
+main: com.solace.friends.FriendsPlugin
+api-version: '1.21'
+author: Solace
+description: Friend management plugin with online notifications
+
+commands:
+  friend:
+    description: Manage your friends
+    usage: /friend <add|accept|deny|requests|remove|list> [player]
+    aliases: [f, friends]

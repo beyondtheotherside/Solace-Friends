@@ -1,0 +1,6 @@
+com/solace/friends/listeners/PlayerJoinListener.class
+com/solace/friends/listeners/PlayerJoinListener$1.class
+com/solace/friends/managers/FriendManager.class
+com/solace/friends/utils/MessageUtils.class
+com/solace/friends/commands/FriendCommand.class
+com/solace/friends/FriendsPlugin.class
